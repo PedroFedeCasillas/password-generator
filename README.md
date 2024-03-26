@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+# Generador de Contraseñas Seguras
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descripción del desafío:
+El objetivo de este desafío es crear un generador de contraseñas seguras utilizando JavaScript. Como JavaScript Developer Jr., se espera que puedas implementar una solución que cumpla con los requisitos básicos de seguridad de contraseñas y que también muestre un buen manejo de las funciones y estructuras de control de JavaScript.
 
-Currently, two official plugins are available:
+Requisitos del generador de contraseñas:
+- El generador de contraseñas debe solicitar al usuario la longitud deseada para la contraseña.
+- Debe generar una contraseña aleatoria que cumpla con los siguientes criterios:
+  a. La contraseña debe tener una combinación de letras (mayúsculas y minúsculas), números y caracteres especiales.
+  b. La contraseña debe ser única cada vez que se genere.
+- El generador de contraseñas debe mostrar la contraseña generada al usuario.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Puntos extras (opcionales):
+Si deseas mostrar un mayor conocimiento y habilidades, puedes considerar implementar algunas o todas estas características adicionales:
+- Permitir al usuario seleccionar los tipos de caracteres que desea incluir en la contraseña (letras, números, caracteres especiales).
+- Validar la longitud ingresada por el usuario para asegurarse de que sea un número válido y proporcionar un mensaje de error si no lo es.
+- Proporcionar al usuario la opción de generar múltiples contraseñas seguras a la vez.
+- Mejorar la interfaz de usuario con estilos CSS básicos para que sea más atractiva y amigable.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
